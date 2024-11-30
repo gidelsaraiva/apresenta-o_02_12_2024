@@ -98,7 +98,8 @@ def carrrega_dados(classe_selecionado, indice_selecionado):
 
     # Carrega os vetores latentes
     #caminho_arquivo_2 = "./arquivo_projeto/listar_tensores_300_cada_de_0_9.pt"
-    caminho_arquivo_2 = "./arquivo_projeto/listar_vetores_300_cada_de_0_9.pt"
+    #caminho_arquivo_2 = "./arquivo_projeto/listar_vetores_300_cada_de_0_9.pt"
+    caminho_arquivo_2 = "./listar_vetores_300_cada_de_0_9.pt"
     resultados = torch.load(caminho_arquivo_2)
 
     # Filtra os vetores latentes da classe selecionada
@@ -255,7 +256,8 @@ elif selected == "Imagens":
     
     # Inicialize o modelo
     G = Generator(z_i, g_n).to(device)
-    caminho_arquivo_1 = "./arquivo_projeto/Modelo_salvo_G_30_epochs.pt"
+    #caminho_arquivo_1 = "./arquivo_projeto/Modelo_salvo_G_30_epochs.pt"
+    caminho_arquivo_1 = "./Modelo_salvo_G_30_epochs.pt"
     G.load_state_dict(torch.load(caminho_arquivo_1))
     G.eval()
 
