@@ -2,5 +2,6 @@ streamlit
 torch
 torchvision
 matplotlib
+scikit-learn
 
 
