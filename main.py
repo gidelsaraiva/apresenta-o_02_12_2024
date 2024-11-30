@@ -7,17 +7,12 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 from streamlit_option_menu import option_menu
 # Definir layout "wide"
+# Configurar título e layout
+st.set_page_config(page_title="Menu Interativo", layout="wide")
 
 # Define o dispositivo
 device = torch.device("cpu")
-import os
 
-# Listar arquivos no diretório atual
-st.write("Arquivos no diretório atual:", os.listdir("."))
-
-
-# Configurar título e layout
-st.set_page_config(page_title="Menu Interativo", layout="wide")
 
 # Botão para remover o cache e dados no session_state
 ############################################################################
