@@ -10,6 +10,10 @@ from streamlit_option_menu import option_menu
 
 # Define o dispositivo
 device = torch.device("cpu")
+import os
+
+# Listar arquivos no diretório atual
+st.write("Arquivos no diretório atual:", os.listdir("."))
 
 
 # Configurar título e layout
