@@ -119,7 +119,7 @@ def carrrega_dados(classe_selecionado, indice_selecionado):
     Scaled_data = scaling.fit_transform(tabela)
 
     # Aplica o PCA
-    principal = PCA(n_components=1)
+    principal = PCA(n_components=36)
     Componentes_principais = principal.fit_transform(Scaled_data)
 
     # Extrai os pesos do primeiro componente principal
